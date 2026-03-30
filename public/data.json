@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Operation AI",
+    "description": "AI-powered resume builder with ATS optimization and smart suggestions.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI content suggestions"
+    ],
+    "icon": "/products/operation.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Maker",
+    "description": "Generate high-converting marketing copy using advanced AI.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Ad copy generator",
+      "Blog writing",
+      "SEO optimization",
+      "Multi-language support"
+    ],
+    "icon": "/products/portfolio.png"
+  },
+  {
+    "id": 3,
+    "name": "DesignBot",
+    "description": "Create stunning designs instantly with AI-powered tools.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Auto design layouts",
+      "Social media templates",
+      "Drag & drop editor",
+      "Brand kit support"
+    ],
+    "icon": "/products/shopping-cart.png"
+  },
+  {
+    "id": 4,
+    "name": "CodeAssist AI",
+    "description": "Boost your coding productivity with AI-powered suggestions.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "free",
+    "features": [
+      "Code auto-completion",
+      "Bug detection",
+      "Multi-language support",
+      "Real-time suggestions"
+    ],
+    "icon": "/products/social-media.png"
+  },
+  {
+    "id": 5,
+    "name": "VoiceGen",
+    "description": "Convert text into realistic human-like voiceovers.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "trending",
+    "features": [
+      "Natural voices",
+      "Multiple accents",
+      "Audio export",
+      "Speed & tone control"
+    ],
+    "icon": "/products/writing.png"
+  },
+  {
+    "id": 6,
+    "name": "VideoAI Studio",
+    "description": "Create AI-generated videos with scripts, visuals, and voice.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Text to video",
+      "Auto subtitles",
+      "Stock footage library",
+      "Voiceover integration"
+    ],
+    "icon": "/products/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "ChatBot Pro",
+    "description": "Build intelligent AI chatbots for websites and apps.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "No-code chatbot builder",
+      "Custom workflows",
+      "API integrations",
+      "Live chat handoff"
+    ],
+    "icon": "/products/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "ImageGen AI",
+    "description": "Generate high-quality images from text prompts instantly.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "trending",
+    "features": [
+      "Text to image",
+      "HD image export",
+      "Style presets",
+      "Fast rendering"
+    ],
+    "icon": "/products/shopping-cart.png"
+  },
+  {
+    "id": 9,
+    "name": "DataMind AI",
+    "description": "Analyze and visualize data using AI-driven insights.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Auto data insights",
+      "Interactive dashboards",
+      "CSV & Excel import",
+      "Predictive analytics"
+    ],
+    "icon": "/products/shopping-cart.png"
+  }
+]
