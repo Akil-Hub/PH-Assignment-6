@@ -63,8 +63,8 @@ Explore Products
 </div>
       </article>
 {/* Right section */}
-<article className="w-1/2">
-  <img src={banner} alt="bannerImage" className="w-[80%]" />
+<article className="w-1/2 ">
+  <img src={banner} alt="bannerImage" className="w-[80%] mx-auto" />
 </article>
 
     </section>

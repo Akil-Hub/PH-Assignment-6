@@ -5,6 +5,7 @@ import Testimonials from './components/Testimonials'
 import MainToolsSection from './components/MainToolsSection'
   import { ToastContainer } from 'react-toastify';
 import GetStartedSection from './components/GetStartedSection'
+import PricingSection from './components/PricingSection'
 const getData = async() => {
     const res = await fetch('/data.json')
     return res.json()
@@ -24,6 +25,7 @@ const App = () => {
     <Testimonials/>
     <MainToolsSection promiseData={promiseData} cart={cart} setCart={setCart}/>
     <GetStartedSection/>
+     <PricingSection/>
 
 
 <ToastContainer/>
