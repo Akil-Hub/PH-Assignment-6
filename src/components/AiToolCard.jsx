@@ -19,11 +19,11 @@ const AiToolCard = ({ tool, setCart, cart }) => {
   };
 
   return (
-    <article className="shadow-md rounded-2xl hover:scale-105 duration-300 border border-gray-200">
-      <div className="bg-white rounded-2xl p-5 h-full flex flex-col justify-between hover:shadow-xl transition-all duration-500 ">
-        <div>
-     <section className="flex-1">
-             <div className="flex items-center justify-between mb-3">
+    <article className="shadow-md rounded-2xl hover:scale-105 duration-300 border border-gray-200 cursor-pointer active:scale-95">
+      <section className="bg-white rounded-2xl p-5 h-full flex flex-col justify-between hover:shadow-xl transition-all duration-500 ">
+      
+          <div className="title">
+            <div className=" flex items-center justify-between mb-3">
             <img src={icon} alt={name} className="w-7" />
 
             <span
@@ -44,9 +44,11 @@ const AiToolCard = ({ tool, setCart, cart }) => {
           <h3 className="text-2xl font-semibold mb-1">{name}</h3>
           <p className="text-sm text-gray-500 mb-4">{description}</p>
 
+          </div>
           {/* pricing */}
 
-          <div >
+          <div className="flex-1" >
+            
             <div className="mb-4">
               <span className="text-2xl font-bold">
                 {price === 0 ? "Free" : `$${price}`}
@@ -68,7 +70,6 @@ const AiToolCard = ({ tool, setCart, cart }) => {
               ))}
             </ul>
           </div>
-     </section>
 
           <button
             onClick={() => handleBtnClick(tool)}
@@ -76,8 +77,7 @@ const AiToolCard = ({ tool, setCart, cart }) => {
           >
             {selected ? "Added To Cart" : "Buy Now"}
           </button>
-        </div>
-      </div>
+      </section>
     </article>
   );
 };

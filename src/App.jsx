@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Testimonials from './components/Testimonials'
 import MainToolsSection from './components/MainToolsSection'
   import { ToastContainer } from 'react-toastify';
+import GetStartedSection from './components/GetStartedSection'
 const getData = async() => {
     const res = await fetch('/data.json')
     return res.json()
@@ -22,6 +23,7 @@ const App = () => {
     <Banner/>
     <Testimonials/>
     <MainToolsSection promiseData={promiseData} cart={cart} setCart={setCart}/>
+    <GetStartedSection/>
 
 
 <ToastContainer/>
