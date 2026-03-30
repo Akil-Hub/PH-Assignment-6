@@ -20,10 +20,10 @@ const AiToolCard = ({ tool, setCart, cart }) => {
 
   return (
     <article className="shadow-md rounded-2xl hover:scale-105 duration-300 border border-gray-200">
-      <div className="bg-white rounded-2xl p-5 h-full flex flex-col justify-between hover:shadow-xl transition-all duration-500">
-        {/* Top */}
+      <div className="bg-white rounded-2xl p-5 h-full flex flex-col justify-between hover:shadow-xl transition-all duration-500 ">
         <div>
-          <div className="flex items-center justify-between mb-3">
+     <section className="flex-1">
+             <div className="flex items-center justify-between mb-3">
             <img src={icon} alt={name} className="w-7" />
 
             <span
@@ -46,7 +46,7 @@ const AiToolCard = ({ tool, setCart, cart }) => {
 
           {/* pricing */}
 
-          <div>
+          <div >
             <div className="mb-4">
               <span className="text-2xl font-bold">
                 {price === 0 ? "Free" : `$${price}`}
@@ -68,6 +68,7 @@ const AiToolCard = ({ tool, setCart, cart }) => {
               ))}
             </ul>
           </div>
+     </section>
 
           <button
             onClick={() => handleBtnClick(tool)}

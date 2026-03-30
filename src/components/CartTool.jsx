@@ -12,7 +12,7 @@ const CartTool = ({tool,cart,setCart}) => {
     };
 
   return (
-    <div className="flex justify-between rounded-lg  bg-gray-100 p-5 col-span-3 my-2">
+    <div className="flex justify-between rounded-lg  bg-gray-100 p-5  my-2">
       <section className="flex gap-5 items-center">
         <span>
           <img src={icon} alt={name} className="w-12" />
