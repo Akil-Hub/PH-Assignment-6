@@ -1,10 +1,14 @@
 import { use, useState } from "react";
 import AiToolCard from "./AiToolCard";
+import CartTool from "./CartTool";
+import Products from "./Products";
+import Cart from "./Cart";
 
 const MainToolsSection = ({ promiseData, setCart, cart }) => {
   const data = use(promiseData);
 
   const [activeTab, setActiveTab] = useState("cart");
+
   return (
     <article className="wrapper">
       {/* tooggle tabs */}
@@ -33,13 +37,13 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
             role="tab"
             className={`tab font-semibold rounded-full px-8 border-2 text-violet-600 border-violet-600 ${activeTab === "cart" ? "tab-active    bg-linear-to-r  from-violet-800 to-purple-600  text-white transition-all duration-300" : null}`}
           >
-            Cart <span>({2})</span>
+            Cart <span>({cart.length})</span>
           </a>
         </div>
       </div>
 
       {/* Ai tools start form here */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {/* <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {activeTab === "products"
           && data.map((tool) => (
               <AiToolCard
@@ -47,15 +51,24 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
                 tool={tool}
                 setCart={setCart}
                 cart={cart}
+               
               />
             ))
           }
         {activeTab === "cart"
           && cart.map((tool) => (
-              <h2>{tool.name}</h2>
+              <CartTool tool={tool} key={tool.id} cart={cart} setCart={setCart}/>
             ))
           }
-      </section>
+      </section> */}
+
+
+      {
+        activeTab === 'products' && <Products data={data} cart={cart} setCart={setCart}/>
+      }
+      {
+        activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>
+      }
     </article>
   );
 };

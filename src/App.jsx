@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Testimonials from './components/Testimonials'
 import MainToolsSection from './components/MainToolsSection'
-
+  import { ToastContainer } from 'react-toastify';
 const getData = async() => {
     const res = await fetch('/data.json')
     return res.json()
@@ -16,13 +16,15 @@ const App = () => {
 
   const [cart, setCart] = useState([])
 
-console.log(cart)
   return (
     < >
-    <Navbar/>
+    <Navbar cart={cart}/>
     <Banner/>
     <Testimonials/>
     <MainToolsSection promiseData={promiseData} cart={cart} setCart={setCart}/>
+
+
+<ToastContainer/>
     </>
   )
 }

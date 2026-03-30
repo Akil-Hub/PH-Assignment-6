@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import { Check } from "lucide-react";
+import { toast } from "react-toastify";
 
-const AiToolCard = ({ tool,setCart,cart }) => {
+const AiToolCard = ({ tool, setCart, cart }) => {
+  const { id, name, description, price, period, tagType, features, icon } =
+    tool;
 
-    const [selected, setSelected] = useState(false)
-  const {id, name, description, price, period, tagType, features, icon } = tool;
+  const [selected, setSelected] = useState(false);
 
-//   btn click functins
-const handleBtnClick = (tool) => {
-    const isToolExist = cart.find((t)=>t.id === tool.id)
-     !isToolExist && setCart(prevTool=>[...prevTool,tool])
-     setSelected(true)
 
-};
+  //   btn click functins
+  const handleBtnClick = (tool) => {
+    setSelected(true);
 
+    const isToolExist = cart.find((t) => t.id === tool.id);
+    !isToolExist && setCart((prevTool) => [...prevTool, tool]);
+    toast.success('Tools successfully added to cart.')
+  };
 
   return (
     <article className="shadow-md rounded-2xl hover:scale-105 duration-300 border border-gray-200">
@@ -66,8 +69,11 @@ const handleBtnClick = (tool) => {
             </ul>
           </div>
 
-          <button onClick={()=>handleBtnClick(tool)} className={`w-full py-2 rounded-full ${selected ? ' bg-linear-to-r from-green-900 to-green-400':' bg-linear-to-r from-violet-600 to-purple-600'} text-white font-medium hover:opacity-90 transition-all duration-300 active:scale-95`}>
-            {selected ? 'Added To Cart' :'Buy Now'}
+          <button
+            onClick={() => handleBtnClick(tool)}
+            className={`w-full py-2 rounded-full ${selected ? " bg-linear-to-r from-green-900 to-green-400" : " bg-linear-to-r from-violet-600 to-purple-600"} text-white font-medium hover:opacity-90 transition-all duration-300 active:scale-95`}
+          >
+            {selected ? "Added To Cart" : "Buy Now"}
           </button>
         </div>
       </div>
