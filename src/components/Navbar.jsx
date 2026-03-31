@@ -43,6 +43,7 @@ const Navbar = ({ cart }) => {
               {cart.length}
             </span>
           </div>
+
           {/* mobile menu  bar  */}
 
 
@@ -54,7 +55,7 @@ const Navbar = ({ cart }) => {
 
 
          <div className="hidden md:block">
-           <button className="btn">Login</button>
+           <button className="btn mr-3">Login</button>
           <button className="btn bg-linear-to-r from-violet-500 via-purple-500 to-pink-500 text-white">
             Get Started
           </button>
