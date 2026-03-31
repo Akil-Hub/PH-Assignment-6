@@ -4,7 +4,7 @@ const Testimonials = () => {
   return (
     <section className='bg-linear-to-r from-violet-800 to-purple-600 py-6 mb-20'>
 
-        <article className="wrapper grid gap-4 grid-cols-1 sm:grid-cols-3 items-center place-items-center">
+        <article className="wrapper grid gap-4 grid-cols-1 md:grid-cols-3 items-center place-items-center">
 
             <div className='w-70 md:border-r border-gray-300  text-center md:text-left'>
                 <h4 className='text-4xl font-semibold text-white'>50K+</h4>

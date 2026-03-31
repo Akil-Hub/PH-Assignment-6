@@ -6,7 +6,7 @@ const Products = ({ data, cart, setCart }) => {
     <div>
       {/* Ai tools start form here */}
       {
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8">
           {data.map((tool) => (
             <AiToolCard
               key={tool.id}
