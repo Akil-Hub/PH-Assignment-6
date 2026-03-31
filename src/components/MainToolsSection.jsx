@@ -23,7 +23,7 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
 
         <div
           role="tablist"
-          className="tabs tabs-box justify-center gap-3 py-3 bg-white"
+          className="tabs tabs-box justify-center gap-3 py-3  bg-gray-200 w-70 mx-auto rounded-full"
         >
           <a
             onClick={() => setActiveTab("products")}
@@ -32,7 +32,6 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
           >
             Products
           </a>
-
 
           <a
             onClick={() => setActiveTab("cart")}
