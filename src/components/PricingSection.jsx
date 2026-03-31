@@ -8,12 +8,12 @@ const PricingSection = () => {
         <h3 className="text-4xl font-bold text-gray-900">
           Simple, Transparent Pricing
         </h3>
-        <p className="py-3">
+        <p className="py-3 px-5 md:px-0">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
 
-      <section className="grid grid-cols-3 gap-8 wrapper">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 wrapper pb-10">
         {pricingData.map((pricing) => (
           <PricingCard key={pricing.id} pricing={pricing} />
         ))}

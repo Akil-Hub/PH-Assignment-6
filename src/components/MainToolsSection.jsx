@@ -13,10 +13,10 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
     <article className="wrapper">
       {/* tooggle tabs */}
       <div className="wrapper text-center">
-        <h3 className="text-5xl text-gray-900 font-semibold">
+        <h3 className="text-3xl md:text-5xl text-gray-900 font-semibold">
           Premium Digital Tools
         </h3>
-        <p className="text-gray-400 py-3 w-120 mx-auto">
+        <p className="text-gray-400 py-3 md:w-120 mx-auto">
           Choose from our curated collection of premium digital products
           designed to boost your productivity and creativity.
         </p>
@@ -42,13 +42,10 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
         </div>
       </div>
 
-
-      {
-        activeTab === 'products' && <Products data={data} cart={cart} setCart={setCart}/>
-      }
-      {
-        activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>
-      }
+      {activeTab === "products" && (
+        <Products data={data} cart={cart} setCart={setCart} />
+      )}
+      {activeTab === "cart" && <Cart cart={cart} setCart={setCart} />}
     </article>
   );
 };

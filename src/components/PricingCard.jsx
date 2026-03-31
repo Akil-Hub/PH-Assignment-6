@@ -14,7 +14,7 @@ const PricingCard = ({pricing}) => {
   buttonText
 } = pricing
   return (
-    <article className="group p-0.5 rounded-2xl hover:bg-linear-to-r hover:from-violet-600 hover:to-purple-600 transition-colors duration-500  shadow-xl border-violet-600 border-2 hover:scale-[1.02] hover:text-white ">
+    <article className="group p-0.5 rounded-2xl hover:bg-linear-to-r hover:from-violet-600 hover:to-purple-600 transition-all duration-500  shadow-xl border-violet-600 border-2 hover:scale-[1.02] hover:text-white ">
 
       <div className="h-full flex flex-col justify-between  rounded-2xl p-6   ">
 

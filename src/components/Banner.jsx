@@ -2,14 +2,15 @@ import React from "react";
 import dot from "../assets/dot.png";
 import playIcon from "../assets/play.png";
 import banner from '../assets/banner.png'
+import Button from "./common/Button";
 const Banner = () => {
   return (
-    <section className="py-20 flex justify-between items-center wrapper gap-10">
+    <section className="md:py-20 py-10 flex flex-col md:flex-row  justify-between items-center wrapper gap-10">
       {/* left section */}
-      <article className="left w-1/2 space-y-6">
+      <article className="left md:w-1/2 space-y-6">
 
         {/* design text */}
-        <div className="bg-[#E1E7FF] w-70 rounded-full flex items-center px-3 gap-2 my-1 py-1">
+        <div className="bg-[#E1E7FF] md:w-70 md:text-base text-xs w-60  rounded-full flex items-center px-3 gap-2 my-1 py-1 mx-auto md:mx-0">
           <span className="w-3 ">
             <img src={dot} alt="dot.png" />
           </span>
@@ -19,8 +20,8 @@ const Banner = () => {
           </h3>
         </div>
         {/* main heading */}
-        <h1 className="font-bold text-6xl text-[#101727]">Supercharge Your Digital Workflow</h1>
-        <p className="text-gray-400 leading-5">Access premium AI tools, design assets, templates, and productivity
+        <h1 className="font-bold md:text-6xl text-2xl text-center md:text-left text-[#101727]">Supercharge Your Digital Workflow</h1>
+        <p className="text-gray-400 leading-5 md:text-base md:text-left text-xs text-center">Access premium AI tools, design assets, templates, and productivity
 software—all in one place. Start creating faster today.
 
 Explore Products 
@@ -31,39 +32,18 @@ Explore Products
 
 
 
-  <button className="px-5 py-2 rounded-full bg-white  hover:bg-linear-to-r border-2 border-violet-600 hover:from-violet-800 hover:to-purple-600 transition-all duration-300 active:scale-95 group">
-    <span className="bg-linear-to-r from-violet-800 to-purple-600 bg-clip-text text-transparent group-hover:text-white font-semibold transition-all duration-700">
-      Explore Products
-    </span>
-  </button>
-
-<button
-  className="px-5 py-2 rounded-full bg-white
-    hover:bg-linear-to-r border-2 border-violet-600
-    hover:from-violet-800 hover:to-purple-600
-    hover:border-transparent transition-all
-    duration-300 group
-    flex items-center gap-2 active:scale-95"
->
-  <img
-    src={playIcon}
-  />
-  <span
-    className="bg-gradient-to-r from-violet-800
-      to-purple-600 bg-clip-text text-transparent
-      group-hover:text-white font-semibold
-      transition-colors duration-500"
-  >
-    Explore Products
-  </span>
-</button>
+  
+<div className="flex flex-col md:flex-row justify-center   gap-4 text-center mx-auto md:mx-0 ">
+  <Button title={'Explore Products'}/>
+<Button title={'Watch Demo'} playIcon={playIcon}/>
+</div>
 
 
 
 </div>
       </article>
 {/* Right section */}
-<article className="w-1/2 ">
+<article className="md:w-1/2 ">
   <img src={banner} alt="bannerImage" className="w-[80%] mx-auto" />
 </article>
 

@@ -6,11 +6,11 @@ const Testimonials = () => {
 
         <article className="wrapper flex justify-between">
 
-            <div className='w-70 border-r border-gray-300'>
+            <div className='w-70 md:border-r border-gray-300'>
                 <h4 className='text-4xl font-semibold text-white'>50K+</h4>
                 <p className='text-gray-100 py-1 text-xl'>Active Users</p> 
             </div>
-            <div className='w-70 border-r border-gray-300'>
+            <div className='w-70 md:border-r border-gray-300'>
                 <h4 className='text-4xl font-semibold text-white'>200+</h4>
                 <p className='text-gray-100 py-1 text-xl'>Premium Tools</p> 
             </div>
