@@ -1,6 +1,6 @@
 import React from "react";
 import dot from "../assets/dot.png";
-import playIcon from "../assets/play.png";
+import playIcon from "../assets/Play.png";
 import banner from '../assets/banner.png'
 import Button from "./common/Button";
 const Banner = () => {
