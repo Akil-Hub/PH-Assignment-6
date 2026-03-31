@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#101727] py-20">
-      <section className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr_2fr]  gap-10 wrapper ">
+      <section className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr_2fr]  gap-10 wrapper justify-items-center">
         <div className="px-5">
           <h4 className="text-gray-100 text-3xl font-semibold">DigiTools</h4>
           <p className="text-gray-400 py-3">
@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="">Integrations</a>
           </h6>
         </div>
-        <div className="space-y-3 text-gray-400">
+        <div className="space-y-3 text-gray-400 ">
           <h4 className="text-xl   text-gray-100 font-semibold">Company</h4>
           <h6>
             <a href="">About</a>
@@ -58,7 +58,7 @@ const Footer = () => {
             <a href="">Contact</a>
           </h6>
         </div>
-        <div className=" text-gray-400">
+        <div className=" text-gray-400 col-span-2 md:col-span-1">
           <h4 className="text-xl text-gray-100 font-semibold">Social Links</h4>
           <div className="flex gap-4 mt-4 text-3xl text-white">
             <FaFacebook />
@@ -70,9 +70,9 @@ const Footer = () => {
 
       <hr className="text-gray-600 py-1 my-3" />
 
-      <section className="text-gray-400 flex wrapper justify-between">
-        <div className="">© 2026 Digitools. All rights reserved.</div>
-        <div className="flex gap-5">
+      <section className="text-gray-400 flex flex-col md:flex-row wrapper gap-5 md:gap-0 justify-between">
+        <div className="md:text-base text-sm">© 2026 Digitools. All rights reserved.</div>
+        <div className="flex gap-5 text-xs md:text-base">
           <h4>Privacy Policy </h4>
           <h4>Terms of Service </h4> 
           <h4>Cookies </h4>

@@ -28,14 +28,14 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
           <a
             onClick={() => setActiveTab("products")}
             role="tab"
-            className={`tab rounded-full px-8 border-2 font-semibold text-violet-600 border-violet-600 ${activeTab === "products" ? "tab-active    bg-linear-to-r  from-violet-800 to-purple-600  text-white transition-all duration-300" : null}`}
+            className={`tab rounded-full px-8 border-2 font-semibold text-violet-600 border-violet-600 ${activeTab === "products" ? "tab-active    bg-linear-to-r  from-violet-800 to-purple-600  text-white transition-all duration-300" : null} active:scale-95 hover:scale-105 duration-300 transition-all`}
           >
             Products
           </a>
           <a
             onClick={() => setActiveTab("cart")}
             role="tab"
-            className={`tab font-semibold rounded-full px-8 border-2 text-violet-600 border-violet-600 ${activeTab === "cart" ? "tab-active    bg-linear-to-r  from-violet-800 to-purple-600  text-white transition-all duration-300" : null}`}
+            className={`tab font-semibold rounded-full px-8 border-2 text-violet-600 border-violet-600 ${activeTab === "cart" ? "tab-active    bg-linear-to-r  from-violet-800 to-purple-600  text-white transition-all duration-300" : null} active:scale-95 hover:scale-105 duration-300 transition-all`}
           >
             Cart <span>({cart.length})</span>
           </a>

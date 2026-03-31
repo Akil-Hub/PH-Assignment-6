@@ -33,7 +33,7 @@ Explore Products
 
 
   
-<div className="flex flex-col md:flex-row justify-center   gap-4 text-center mx-auto md:mx-0 ">
+<div className="flex flex-col md:flex-row justify-center items-center  gap-4 text-center mx-auto md:mx-0 ">
   <Button title={'Explore Products'}/>
 <Button title={'Watch Demo'} playIcon={playIcon}/>
 </div>

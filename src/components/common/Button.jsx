@@ -8,7 +8,7 @@ const Button = ({title,className,playIcon}) => {
         hover:from-violet-800 hover:to-purple-600
         hover:border-transparent transition-all
         duration-300 group
-        flex items-center gap-2 active:scale-95"
+        flex items-center gap-2 active:scale-95 w-fit"
     >
       <img
         src={playIcon? playIcon:null}
