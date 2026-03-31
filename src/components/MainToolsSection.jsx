@@ -7,7 +7,7 @@ import Cart from "./Cart";
 const MainToolsSection = ({ promiseData, setCart, cart }) => {
   const data = use(promiseData);
 
-  const [activeTab, setActiveTab] = useState("cart");
+  const [activeTab, setActiveTab] = useState("products");
 
   return (
     <article className="wrapper">
@@ -32,6 +32,8 @@ const MainToolsSection = ({ promiseData, setCart, cart }) => {
           >
             Products
           </a>
+
+
           <a
             onClick={() => setActiveTab("cart")}
             role="tab"
